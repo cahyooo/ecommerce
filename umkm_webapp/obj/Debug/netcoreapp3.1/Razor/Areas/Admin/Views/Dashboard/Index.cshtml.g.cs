@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp.Areas.Admin;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"68b7067eecb08d5ade047ddf886e26eda2098ee0", @"/Areas/Admin/Views/Dashboard/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b25e33c9ab078f69963bbacad25489b84c4caea4", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -7,16 +7,18 @@ namespace umkm_webapp.Context
     {
         public DatabaseContext()
         {
+
         }
 
-        public DatabaseContext(DbContextOptions<DatabaseContext>dbContext) : base(dbContext)
+        public DatabaseContext(DbContextOptions<DatabaseContext>dbContext)
+            : base(dbContext)
         {
 
         }
 
-        public DbSet<Account> Accounts { get; set; }
-        public DbSet<RoleAccount> RoleAccounts { get; set; }
-        public DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<RoleAccount> RoleAccounts { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,16 +30,20 @@ namespace umkm_webapp.Context
                     .HasForeignKey(d => d.AccountId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Account_Role_Account");
+                //.HasConstraintName("FK_RoleAccount_Account");
+
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.RoleAccounts)
                     .HasForeignKey(d => d.RoleId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Account_Role_Role");
+                //.HasConstraintName("FK_RoleAccount_Role");
+
 
             });
         }
 
-
+        
     }
 }

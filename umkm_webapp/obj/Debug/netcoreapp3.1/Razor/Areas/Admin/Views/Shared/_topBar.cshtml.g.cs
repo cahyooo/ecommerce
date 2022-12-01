@@ -12,12 +12,36 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp.Areas.Admin;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\Areas\Admin\Views\_ViewImports.cshtml"
+using umkm_webapp.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d973203416f6304d82c6ed06fb1663c8afe3e290", @"/Areas/Admin/Views/Shared/_topBar.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b25e33c9ab078f69963bbacad25489b84c4caea4", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Shared__topBar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("rounded-circle"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/img/undraw_profile_1.svg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString("..."), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("form-inline mr-auto w-100 navbar-search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("rounded-circle"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/img/undraw_profile_1.svg"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString("..."), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -38,6 +62,8 @@ namespace AspNetCore
                 return __backed__tagHelperScopeManager;
             }
         }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
@@ -51,7 +77,9 @@ namespace AspNetCore
     </button>
 
     <!-- Topbar Search -->
-    <form class=""d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"">
+    ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d973203416f6304d82c6ed06fb1663c8afe3e2905866", async() => {
+                WriteLiteral(@"
         <div class=""input-group"">
             <input type=""text"" class=""form-control bg-light border-0 small"" placeholder=""Search for...""
                    aria-label=""Search"" aria-describedby=""basic-addon2"">
@@ -61,14 +89,28 @@ namespace AspNetCore
                 </button>
             </div>
         </div>
-    </form>
+    ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
 
     <!-- Topbar Navbar -->
     <ul class=""navbar-nav ml-auto"">
 
         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-        <li cla");
-            WriteLiteral(@"ss=""nav-item dropdown no-arrow d-sm-none"">
+        <li class=""nav-item dropdown no-arrow d-sm-none"">
             <a class=""nav-link dropdown-toggle"" href=""#"" id=""searchDropdown"" role=""button""
                data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">
                 <i class=""fas fa-search fa-fw""></i>
@@ -76,19 +118,35 @@ namespace AspNetCore
             <!-- Dropdown - Messages -->
             <div class=""dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in""
                  aria-labelledby=""searchDropdown"">
-                <form class=""form-inline mr-auto w-100 navbar-search"">
+                ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d973203416f6304d82c6ed06fb1663c8afe3e2908305", async() => {
+                WriteLiteral(@"
                     <div class=""input-group"">
                         <input type=""text"" class=""form-control bg-light border-0 small""
                                placeholder=""Search for..."" aria-label=""Search""
                                aria-describedby=""basic-addon2"">
                         <div class=""input-group-append"">
                             <button class=""btn btn-primary"" type=""button"">
-                                <i class=""fas fa-search fa-sm""><");
-            WriteLiteral(@"/i>
+                                <i class=""fas fa-search fa-sm""></i>
                             </button>
                         </div>
                     </div>
-                </form>
+                ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral(@"
             </div>
         </li>
 
@@ -107,10 +165,10 @@ namespace AspNetCore
                     Alerts Center
                 </h6>
                 <a class=""dropdown-item d-flex align-items-center"" href=""#"">
-                    <div class=""mr");
-            WriteLiteral(@"-3"">
+                    <div class=""mr-3"">
                         <div class=""icon-circle bg-primary"">
-                            <i class=""fas fa-file-alt text-white""></i>
+                            <i class=""fas fa-file-alt text-");
+            WriteLiteral(@"white""></i>
                         </div>
                     </div>
                     <div>
@@ -129,10 +187,10 @@ namespace AspNetCore
                         $290.29 has been deposited into your account!
                     </div>
                 </a>
-                <a c");
-            WriteLiteral(@"lass=""dropdown-item d-flex align-items-center"" href=""#"">
+                <a class=""dropdown-item d-flex align-items-center"" href=""#"">
                     <div class=""mr-3"">
-                        <div class=""icon-circle bg-warning"">
+                        <div ");
+            WriteLiteral(@"class=""icon-circle bg-warning"">
                             <i class=""fas fa-exclamation-triangle text-white""></i>
                         </div>
                     </div>
@@ -150,10 +208,10 @@ namespace AspNetCore
             <a class=""nav-link dropdown-toggle"" href=""#"" id=""messagesDropdown"" role=""button""
                data-toggle=""dropdown"" aria-haspopup=""true"" aria-expanded=""false"">
                 <i class=""fas fa-envelope fa-fw""></i>
- ");
-            WriteLiteral(@"               <!-- Counter - Messages -->
+                <!-- Counter - Messages -->
                 <span class=""badge badge-danger badge-counter"">7</span>
-            </a>
+          ");
+            WriteLiteral(@"  </a>
             <!-- Dropdown - Messages -->
             <div class=""dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in""
                  aria-labelledby=""messagesDropdown"">
@@ -163,14 +221,14 @@ namespace AspNetCore
                 <a class=""dropdown-item d-flex align-items-center"" href=""#"">
                     <div class=""dropdown-list-image mr-3"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d973203416f6304d82c6ed06fb1663c8afe3e2909744", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d973203416f6304d82c6ed06fb1663c8afe3e29013972", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
             __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
-            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
             __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_3);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_4);
             await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
             if (!__tagHelperExecutionContext.Output.IsContentModified)
             {

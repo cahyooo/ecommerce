@@ -29,6 +29,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
 
             return View();
         }
+
         [HttpPost]
         [Route("process")]
         public IActionResult Process(string username, string password)
@@ -42,20 +43,14 @@ namespace umkm_webapp.Areas.Admin.Controllers
             else
             {
                 ViewBag.error = "Invalid Account";
-                return View("");
+                return View("index");
 
             }
         }
 
-
+        
         private Account processLogin(string username, string password)
         {
-            //var data = db.RoleAccounts
-            //    .Include(x => x.Account)
-            //    .Include(x => x.Role)
-            //    .FirstOrDefault(x => x.Account.Employee.Email.Equals(login.Email));
-
-
             var account = db.Accounts.SingleOrDefault(a => a.Username.Equals(username) && a.Status == true);
             if (account != null)
             {
@@ -66,6 +61,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
                 }
                 ViewBag.error = "Invalid Account";
 
+
             }
             return null;
         }
@@ -74,7 +70,15 @@ namespace umkm_webapp.Areas.Admin.Controllers
         public IActionResult SignOut()
         {
             securityManager.SignOut(this.HttpContext);
-            return RedirectToAction("admin", "login", new { area = "admin" });
+            return RedirectToAction("index", "login", new { area = "admin" });
+
+        }
+
+        [HttpGet]
+        [Route("profile")]
+        public IActionResult Profile()
+        {
+            return View("_profile","Shared") ;
 
         }
 

@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using umkm_webapp.Areas.Admin.Controllers;
 using umkm_webapp.Context;
 using umkm_webapp.Models;
 
@@ -28,9 +29,16 @@ namespace umkm_webapp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddScoped<LoginController>();
+            //services.AddScoped<DashboardController>();
+
+
+            // Koneksi
+            //
             var con = Configuration.GetConnectionString("MyConnections");
             services.AddDbContext<DatabaseContext>(options =>
-               options.UseSqlServer(con));
+               options.UseLazyLoadingProxies().UseSqlServer(con));
+
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
@@ -41,6 +49,17 @@ namespace umkm_webapp
 
 
                 });
+
+            //services.AddSession(options =>
+            //{
+            //    options.IdleTimeout = TimeSpan.FromMinutes(2);
+            //    options.Cookie.HttpOnly = true;
+            //    options.Cookie.IsEssential = true;
+            //});
+
+
+
+
 
             services.AddMvc();
             services.AddSession();
