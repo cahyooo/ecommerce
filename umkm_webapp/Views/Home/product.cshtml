@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-4 col-12">
                 <div class="sidebar">
-                    <div class="sidebar-widget">
+                    @*<div class="sidebar-widget">
                         <div class="widget-title">
                             <h3>Shop by Price</h3>
                         </div>
@@ -25,29 +25,49 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div>*@
+
                     <div class="sidebar-widget">
                         <div class="widget-title">
                             <h3>Categories</h3>
                         </div>
                         <div class="widget-content widget-categories">
-                            <ul>
-                                <li><a href="#">Fashions</a></li>
-                                <li>
-                                    <a href="#">Electronics</a>
-                                    <ul>
-                                        <li><a href="#">Hand Phone</a></li>
-                                        <li><a href="#">Laptops</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Home and Kitchen</a></li>
-                                <li><a href="#">Baby and Toys</a></li>
-                                <li><a href="#">Sports</a></li>
-                                <li><a href="#">Digital Goods</a></li>
-                            </ul>
+                            <div id="wrapper">
+                                <ul class="navbar-nav" id="accordionSidebar">
+                                    <li class="nav-item" style="list-style:none;">
+                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#num1"
+                                           aria-expanded="true" aria-controls="num1">
+                                            <i class="fa-regular fa-circle"></i>
+                                            <span>Laptop</span>
+                                        </a>
+                                        <div id="num1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                                            <div class="bg-white py-2 collapse-inner rounded">
+                                                <a class="collapse-item" href="#">Asus ROG</a>
+                                                <a class="collapse-item" href="#">Lenovo Legion</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item" style="list-style:none;">
+                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#num2"
+                                           aria-expanded="true" aria-controls="num2">
+                                            <i class="fa-regular fa-circle"></i>
+                                            <span>Laptop</span>
+                                        </a>
+                                        <div id="num2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                                            <div class="bg-white py-2 collapse-inner rounded">
+                                                <a class="collapse-item" href="#">Asus ROG</a>
+                                                <a class="collapse-item" href="#">Lenovo Legion</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="sidebar-widget">
+
+
+                    @*<div class="sidebar-widget">
                         <div class="widget-title">
                             <h3>Brands</h3>
                         </div>
@@ -60,7 +80,8 @@
                                 <li><a href="#">Xiaomi</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>*@
+
                 </div>
             </div>
             <div class="col-lg-9 col-md-8 col-12">
