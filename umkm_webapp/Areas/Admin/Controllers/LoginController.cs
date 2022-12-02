@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using umkm_webapp.Context;
 using umkm_webapp.Models;
 using umkm_webapp.Security;
@@ -78,7 +79,39 @@ namespace umkm_webapp.Areas.Admin.Controllers
         [Route("profile")]
         public IActionResult Profile()
         {
-            return View("_profile","Shared") ;
+            var user = User.FindFirst(ClaimTypes.Name);
+            if (user != null)
+            {
+                var username = user.Value;
+                var account = db.Accounts.SingleOrDefault(a => a.Username.Equals(username));
+
+                return View("profile", account);
+            }
+            else
+            {
+                return RedirectToAction("index", "login", new { area = "admin" });
+            }
+
+            
+
+        }
+
+        [HttpPost]
+        [Route("profile")]
+        public IActionResult Profile(Account account)
+        {
+            var currentAccount = db.Accounts.SingleOrDefault(a => a.Username.Equals
+            (account.Username));
+
+            if (!string.IsNullOrEmpty(account.Password))
+            {
+                currentAccount.Password = BCrypt.Net.BCrypt.HashPassword(account.Password);
+            }
+            currentAccount.Username = account.Username;
+            currentAccount.Email = account.Email;
+            currentAccount.FullName = account.FullName;
+            db.SaveChanges();
+            return View("profile");
 
         }
 

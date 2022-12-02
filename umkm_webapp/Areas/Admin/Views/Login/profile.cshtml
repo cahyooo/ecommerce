@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+    var user = User.FindFirst(ClaimTypes.Name);
+}
+
+@using System.Security.Claims
+@model umkm_webapp.Models.Account
+
+<div class="main-body">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+                        <div class="mt-3">
+                            <h4>@user.Value</h4>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <br /><br />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <form asp-area="admin" asp-controller="login" asp-action="profile" method="post" method="post">
+                        <div class="row mb-3">
+
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input type="text" class="form-control" id="fullname" name="fullname" asp-for="FullName">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input type="email" class="form-control" id="email" name="email" asp-for="Email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Username</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input type="text" class="form-control" id="username" name="username" asp-for="Username">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Password</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                <input type="password" class="form-control" id="password" name="password" asp-for="Password" placeholder="******">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9 text-secondary">
+                                <button type="submit" class="btn btn-primary btn-user btn-block" style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                                    Change
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
