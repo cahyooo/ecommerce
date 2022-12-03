@@ -11,7 +11,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using umkm_webapp.Areas.Admin.Controllers;
-using umkm_webapp.Context;
 using umkm_webapp.Models;
 
 namespace umkm_webapp
