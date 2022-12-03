@@ -335,3 +335,4 @@ D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.dll
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.pdb
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.genruntimeconfig.cache
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
