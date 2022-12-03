@@ -7,17 +7,18 @@ using System.Collections.Generic;
 
 namespace umkm_webapp.Models
 {
-    public partial class Role
+    public partial class Category
     {
-        public Role()
+        public Category()
         {
-            RoleAccounts = new HashSet<RoleAccount>();
+            InverseParents = new HashSet<Category>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool Status { get; set; }
+        public int? ParentId { get; set; }
 
-        public virtual ICollection<RoleAccount> RoleAccounts { get; set; }
+        public virtual Category Parent { get; set; }
+        public virtual ICollection<Category> InverseParents { get; set; }
     }
 }

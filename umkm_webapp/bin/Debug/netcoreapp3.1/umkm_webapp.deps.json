@@ -32,6 +32,7 @@
       "umkm_webapp/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.29",
           "Microsoft.EntityFrameworkCore.Proxies": "3.1.29",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.29",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.29",
