@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 
 namespace umkm_webapp.Models
 {
+    [Table("Category")]
     public partial class Category
     {
         public Category()
@@ -16,6 +18,8 @@ namespace umkm_webapp.Models
 
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public bool Status { get; set; }
         public int? ParentId { get; set; }
 
         public virtual Category Parent { get; set; }
