@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model umkm_webapp.Models.Category
+
+<form method="post" asp-area="Admin" asp-controller="Category" asp-action="add">
+    <div class="form-group">
+        <input class="form-control" asp-for="Name" type="text" required="required" />
+    </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" asp-for="Status" /> Status
+        </label>
+    </div>
+
+    <div>
+        <button type="submit" class="btn-btn-primary">Save</button>
+    </div>
+</form>
