@@ -131,39 +131,186 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runti
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.AssemblyReference.cache
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_profile.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\profile.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\appsettings.json
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.exe
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.deps.json
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.runtimeconfig.json
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.runtimeconfig.dev.json
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.pdb
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.Views.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\umkm_webapp.Views.pdb
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\BCrypt.Net-Core.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.AssemblyInfoInputs.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.AssemblyInfo.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.CoreCompileInputs.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.MvcApplicationPartsAssemblyInfo.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.RazorAssemblyInfo.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.RazorAssemblyInfo.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\staticwebassets\umkm_webapp.StaticWebAssets.Manifest.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\staticwebassets\umkm_webapp.StaticWebAssets.xml
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\scopedcss\bundle\umkm_webapp.styles.css
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.TagHelpers.input.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.TagHelpers.output.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.RazorCoreGenerate.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\profile.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_footer.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_profile.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_sideBar.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_topBar.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\details.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\product.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_breadcrumb.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_slider.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\homepage\_footer.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\homepage\_header.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\homepage\_Layout.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutUser-view.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.RazorTargetAssemblyInfo.cache
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.RazorTargetAssemblyInfo.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.Views.pdb
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.CopyComplete
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.dll
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.pdb
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.genruntimeconfig.cache
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Add.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\AddSubCategory.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Category\Index.cshtml.g.cs
