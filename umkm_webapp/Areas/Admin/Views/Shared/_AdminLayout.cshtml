@@ -1,5 +1,4 @@
 ﻿@using System.Security.Claims
-@model umkm_webapp.Models.Account
 @{ 
     var user = User.FindFirst(ClaimTypes.Name);
 
@@ -75,29 +74,19 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Category</h6>
-                        <a class="collapse-item" href="#">Add</a>
-                        <a class="collapse-item" asp-controller="category" asp-action="index">List</a>
+                        <a class="collapse-item" asp-area="admin" asp-controller="category" asp-action="add">Add</a>
+                        <a class="collapse-item" asp-area="admin" asp-controller="category" asp-action="index">List</a>
 
                     </div>
                 </div>
             </li>
-
-            <!-- Heading -->
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <!-- Divider -->
-            <!-- Heading -->
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- Nav Item - Charts -->
-            <!-- Nav Item - Tables -->
-            <!-- Divider -->
-            <!-- Sidebar Toggler (Sidebar) -->
+           
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
 
-            <!-- Sidebar Message -->
+            
 
 
         </ul>
@@ -290,8 +279,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">@user.Value</span>
-                                @*<img class="~/admin-view/img-profile rounded-circle"
-                                    src="~/admin-view/img/undraw_profile.svg">*@
+                                
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -414,14 +402,6 @@
     <!-- Page level custom scripts -->
     <script src="~/admin-view/js/demo/chart-area-demo.js"></script>
     <script src="~/admin-view/js/demo/chart-pie-demo.js"></script>
-
-
-
-
-
-
-
-
     <script src="~/js/site.js" asp-append-version="true"></script>
 
 
