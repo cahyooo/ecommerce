@@ -29,13 +29,15 @@
                     </tr>
                 </tfoot>
                 <tbody>
+                    @foreach(var category in ViewBag.categories){
                     <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
+                        <td>@category.Id</td>
+                        <td>@category.Name</td>
+                        <td>@(category.Status ? "Show" : "Hide")</td>
+                        <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
+                        <td>Edit | Delete | Add Sub Category</td>
                     </tr>
+                    }
                 </tbody>
             </table>
         </div>
