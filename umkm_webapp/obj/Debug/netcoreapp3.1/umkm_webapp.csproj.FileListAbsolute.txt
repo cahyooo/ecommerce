@@ -132,7 +132,6 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Castl
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_profile.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\profile.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -315,3 +314,5 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Category\Index.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.AssemblyReference.cache
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_featuredProduct.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Search\Index.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs

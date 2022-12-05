@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Category";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -29,7 +29,7 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @{int number = 1;                  }
+                    @{int number = 1; }
 
                     @foreach (var category in ViewBag.categories)
                     {
@@ -40,17 +40,17 @@
                             <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
                             <td>
                                 <a asp-area="admin" asp-controller="category" asp-action="Edit"
-                                   asp-route-id="@category.Id" class="btn btn-primary"> Edit</a><span> | </span>@if (category.InverseParents != null && category.InverseParents.Count == 0)
+                                   asp-route-id="@category.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>@if (category.InverseParents != null && category.InverseParents.Count == 0)
                                 {
-                            <a class="btn btn-danger" asp-area="admin" asp-controller="category" asp-action="delete"
-                               asp-route-id="@category.Id" onclick="return confirm('Are You Sure?') "> Delete</a><span> | </span>}<a  class="btn btn-warning" asp-area="admin" asp-controller="category" asp-action="AddSubCategory"
-   asp-route-id="@category.Id"> Add Sub Category</a>
-                                
+                                    <a class="text-danger" asp-area="admin" asp-controller="category" asp-action="delete"
+                                       asp-route-id="@category.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>}<a class="text-success" asp-area="admin" asp-controller="category" asp-action="AddSubCategory"
+                                                                                                                                             asp-route-id="@category.Id"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+
                             </td>
                         </tr>
                         if (category.InverseParents != null && category.InverseParents.Count != 0)
                         {
-                           
+
                             foreach (var subCategory in category.InverseParents)
                             {
                                 <tr>
@@ -60,14 +60,18 @@
                                     </td>
                                     <td>@(subCategory.Status ? "Show" : "Hide")</td>
                                     <td>@subCategory.Parent.Name</td>
-                                    <td><a asp-area="admin" asp-controller="category" asp-action="Edit"
-   asp-route-id="@subCategory.Id" class="btn btn-primary"> Edit</a> | <a asp-area="admin" asp-controller="category" asp-action="delete"
-   asp-route-id="@subCategory.Id" onclick="return confirm('Are You Sure?')" class="btn btn-danger"> Delete</a> </td>
+                                    <td>
+                                        <a asp-area="admin" asp-controller="category" asp-action="Edit"
+                                           asp-route-id="@subCategory.Id"><i class="fa-solid fa-pen-to-square fa-lg"></i></a> | <a asp-area="admin" asp-controller="category" asp-action="delete"
+                                                                                                                 asp-route-id="@subCategory.Id" onclick="return confirm('Are You Sure?')" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                    </td>
                                 </tr>
                             }
                         }
                         { number++; }
                     }
+
+                    
                 </tbody>
             </table>
         </div>

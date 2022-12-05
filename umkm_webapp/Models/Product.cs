@@ -8,24 +8,26 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace umkm_webapp.Models
 {
-    [Table("Category")]
-    public partial class Category
+    [Table("Product")]
+    public partial class Product
     {
-        public Category()
+        public Product()
         {
-            InverseParents = new HashSet<Category>();
-            Products = new HashSet<Product>();
-
+            Photos = new HashSet<Photo>();
         }
 
         public int Id { get; set; }
         public string Name { get; set; }
-
+        public string Description { get; set; }
+        public string Details { get; set; }
         public bool Status { get; set; }
-        public int? ParentId { get; set; }
+        public decimal Price { get; set; }
+        public int Quantity { get; set; }
+        public int CategoryId { get; set; }
 
-        public virtual Category Parent { get; set; }
-        public virtual ICollection<Category> InverseParents { get; set; }
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual Category Category { get; set; }
+
+        public virtual ICollection<Photo> Photos { get; set; }
+
     }
 }
