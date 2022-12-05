@@ -1,0 +1,25 @@
+﻿@{ 
+    Layout = null;
+}
+
+<form method="post">
+    <input id="srchFld" class="srchTxt" type="text">
+    <select class="srchTxt">
+        @foreach (var category in Model)
+        {
+            @if (category.InverseParents != null && category.InverseParents.Count > 0)
+            {
+                <optgroup label="@category.Name">
+                    @foreach (var subCategory in category.InverseParents)
+                    {
+                        <option value="@subCategory.Id">@subCategory.Name</option>
+                    }
+                </optgroup>
+            }
+            else
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        }
+    </select>
+</form>

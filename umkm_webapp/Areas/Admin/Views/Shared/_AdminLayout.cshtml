@@ -1,5 +1,4 @@
 ﻿@using System.Security.Claims
-@model umkm_webapp.Models.Account
 @{ 
     var user = User.FindFirst(ClaimTypes.Name);
 
@@ -26,11 +25,8 @@
     <!-- Custom styles for this template-->
     <link href="~/admin-view/css/sb-admin-2.css" rel="stylesheet">
     <!-- Data Tables CDN-->
-    @*<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.2/css/buttons.dataTables.min.css">*@
-
     <link href="~/admin-view/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="wrapper">
@@ -75,31 +71,32 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Category</h6>
-                        <a class="collapse-item" href="#">Add</a>
-                        <a class="collapse-item" asp-controller="category" asp-action="index">List</a>
+                        <a class="collapse-item" asp-area="admin" asp-controller="category" asp-action="add">Add</a>
+                        <a class="collapse-item" asp-area="admin" asp-controller="category" asp-action="index">List</a>
 
                     </div>
                 </div>
             </li>
 
-            <!-- Heading -->
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <!-- Divider -->
-            <!-- Heading -->
-            <!-- Nav Item - Pages Collapse Menu -->
-            <!-- Nav Item - Charts -->
-            <!-- Nav Item - Tables -->
-            <!-- Divider -->
-            <!-- Sidebar Toggler (Sidebar) -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#product"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span>Product</span>
+                </a>
+                <div id="product" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Product</h6>
+                        <a class="collapse-item" asp-area="admin" asp-controller="product" asp-action="add">Add</a>
+                        <a class="collapse-item" asp-area="admin" asp-controller="product" asp-action="index">List</a>
+
+                    </div>
+                </div>
+            </li>
+
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-
-
-            <!-- Sidebar Message -->
-
-
         </ul>
 
         <!-- End of Sidebar -->
@@ -109,7 +106,6 @@
             <!-- Main Content -->
             <div id="content">
 
-                @*<partial name="~/Areas/Admin/Views/Shared/_topBar" />*@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
@@ -290,8 +286,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">@user.Value</span>
-                                @*<img class="~/admin-view/img-profile rounded-circle"
-                                    src="~/admin-view/img/undraw_profile.svg">*@
+
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -329,7 +324,6 @@
             </div>
             <!-- End of Main Content -->
             <!-- Footer -->
-            @*<partial name="~/Areas/Admin/Views/Shared/_footer.cshtml" />*@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -368,36 +362,12 @@
             </div>
         </div>
     </div>
-
-    <!--<partial name="_profile">-->
-    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!-- Bootstrap core JavaScript-->
     <script src="~/admin-view/vendor/jquery/jquery.min.js"></script>
     <script src="~/admin-view/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Data Tables-->
+    < <!-- Page level plugins -->
     <script src="~/admin-view/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="~/admin-view/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="~/admin-view/js/demo/datatables-demo.js"></script>
@@ -407,21 +377,6 @@
 
     <!-- Custom scripts for all pages-->
     <script src="~/admin-view/js/sb-admin-2.min.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="~/admin-view/vendor/chart.js/Chart.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="~/admin-view/js/demo/chart-area-demo.js"></script>
-    <script src="~/admin-view/js/demo/chart-pie-demo.js"></script>
-
-
-
-
-
-
-
-
     <script src="~/js/site.js" asp-append-version="true"></script>
 
 

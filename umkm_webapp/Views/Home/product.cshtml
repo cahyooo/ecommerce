@@ -1,87 +1,25 @@
 ﻿<partial name="_breadcrumb">
 
+@model umkm_webapp.Models.Category
+
 <section class="products-grid pb-4 pt-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-4 col-12">
                 <div class="sidebar">
-                    @*<div class="sidebar-widget">
-                        <div class="widget-title">
-                            <h3>Shop by Price</h3>
-                        </div>
-                        <div class="widget-content shop-by-price">
-                            <form method="GET" action="/tesas">
-                                <div class="price-filter">
-                                    <div class="price-filter-inner">
-                                        <div id="slider-range"></div>
-                                        <div class="price_slider_amount">
-                                            <div class="label-input">
-                                                <input type="text" id="amount" name="price"
-                                                       placeholder="Add Your Price" />
-                                                <button type="submit">Filter</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>*@
-
                     <div class="sidebar-widget">
                         <div class="widget-title">
                             <h3>Categories</h3>
                         </div>
+
                         <div class="widget-content widget-categories">
                             <div id="wrapper">
-                                <ul class="navbar-nav" id="accordionSidebar">
-                                    <li class="nav-item" style="list-style:none;">
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#num1"
-                                           aria-expanded="true" aria-controls="num1">
-                                            
-                                            <span>Laptop</span>
-                                        </a>
-                                        <div id="num1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                            <div class="bg-white py-2 collapse-inner rounded">
-                                                <a class="collapse-item" href="#">Asus ROG</a>
-                                                <a class="collapse-item" href="#">Lenovo Legion</a>
-                                            </div>
-                                        </div>
-                                    </li>
 
-                                    <li class="nav-item" style="list-style:none;">
-                                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#num2"
-                                           aria-expanded="true" aria-controls="num2">
-                                            
-                                            <span>Laptop</span>
-                                        </a>
-                                        <div id="num2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                                            <div class="bg-white py-2 collapse-inner rounded">
-                                                <a class="collapse-item" href="#">Asus ROG</a>
-                                                <a class="collapse-item" href="#">Lenovo Legion</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                @await Component.InvokeAsync("Category")
+
                             </div>
                         </div>
                     </div>
-
-
-                    @*<div class="sidebar-widget">
-                        <div class="widget-title">
-                            <h3>Brands</h3>
-                        </div>
-                        <div class="widget-content widget-brands">
-                            <ul>
-                                <li><a href="#">Apple</a></li>
-                                <li><a href="#">Samsung</a></li>
-                                <li><a href="#">Lenovo</a></li>
-                                <li><a href="#">Asus</a></li>
-                                <li><a href="#">Xiaomi</a></li>
-                            </ul>
-                        </div>
-                    </div>*@
-
                 </div>
             </div>
             <div class="col-lg-9 col-md-8 col-12">

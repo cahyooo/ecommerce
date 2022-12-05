@@ -19,17 +19,22 @@ namespace umkm_webapp.Models
         {
         }
 
+
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<RoleAccount> RoleAccounts { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Photo> Photos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.Property(e => e.Id)
+                    .ValueGeneratedOnAdd()
+                    .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                 entity.Property(e => e.Name)
                     .HasMaxLength(250)
@@ -59,6 +64,29 @@ namespace umkm_webapp.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_RoleAccount_Role");
             });
+
+            modelBuilder.Entity<Product>(entity =>
+            {
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.CategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Category_Product");
+
+            });
+
+            modelBuilder.Entity<Photo>(entity =>
+            {
+
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.Photos)
+                    .HasForeignKey(d => d.ProductId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Product_Photos");
+
+            });
+
 
             OnModelCreatingPartial(modelBuilder);
         }

@@ -1,15 +1,15 @@
 ﻿@{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Category";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Category</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered" id="dataCategory" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -29,15 +29,49 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @foreach(var category in ViewBag.categories){
-                    <tr>
-                        <td>@category.Id</td>
-                        <td>@category.Name</td>
-                        <td>@(category.Status ? "Show" : "Hide")</td>
-                        <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
-                        <td>Edit | Delete | Add Sub Category</td>
-                    </tr>
+                    @{int number = 1; }
+
+                    @foreach (var category in ViewBag.categories)
+                    {
+                        <tr>
+                            <td>@number</td>
+                            <th><b>@category.Name</b></th>
+                            <td>@(category.Status ? "Show" : "Hide")</td>
+                            <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
+                            <td>
+                                <a asp-area="admin" asp-controller="category" asp-action="Edit"
+                                   asp-route-id="@category.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>@if (category.InverseParents != null && category.InverseParents.Count == 0)
+                                {
+                                    <a class="text-danger" asp-area="admin" asp-controller="category" asp-action="delete"
+                                       asp-route-id="@category.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>}<a class="text-success" asp-area="admin" asp-controller="category" asp-action="AddSubCategory"
+                                                                                                                                             asp-route-id="@category.Id"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+
+                            </td>
+                        </tr>
+                        if (category.InverseParents != null && category.InverseParents.Count != 0)
+                        {
+
+                            foreach (var subCategory in category.InverseParents)
+                            {
+                                <tr>
+                                    <td>@number</td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@subCategory.Name
+                                    </td>
+                                    <td>@(subCategory.Status ? "Show" : "Hide")</td>
+                                    <td>@subCategory.Parent.Name</td>
+                                    <td>
+                                        <a asp-area="admin" asp-controller="category" asp-action="Edit"
+                                           asp-route-id="@subCategory.Id"><i class="fa-solid fa-pen-to-square fa-lg"></i></a> | <a asp-area="admin" asp-controller="category" asp-action="delete"
+                                                                                                                 asp-route-id="@subCategory.Id" onclick="return confirm('Are You Sure?')" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        { number++; }
                     }
+
+                    
                 </tbody>
             </table>
         </div>

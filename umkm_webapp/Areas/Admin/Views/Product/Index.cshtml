@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "List Product";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@using umkm_webapp.Models;
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Product List</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataCategory" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Foto</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Photo</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Category</th>
+                        <th>Action</th>
+
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @{int number = 1; }
+
+                    @foreach (var product in ViewBag.Products)
+
+                    {
+                        Product pr = (Product)product;
+                        var Photo = pr.Photos.SingleOrDefault(p => p.Featured == true);
+                        <tr>
+                            <td>@number</td>
+                            <td>@product.Name</td>
+                            <td><img src="~/product/@Photo.Name" width="120px" /></td>
+                            <td>@product.Price</td>
+                            <td>@product.Status</td>
+                            <td>@product.Category.Name</td>
+                            <td>
+                                <a asp-area="admin" asp-controller="product" asp-action="Edit"
+                                   asp-route-id="@product.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
+                                <a class="text-danger" asp-area="admin" asp-controller="product" asp-action="delete"
+                                   asp-route-id="@product.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>
+                            </td>
+                        </tr>
+                        { number++; }
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
