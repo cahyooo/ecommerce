@@ -131,7 +131,6 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\runti
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.AssemblyReference.cache
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_profile.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\profile.cshtml.g.cs
@@ -314,3 +313,5 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\Edit.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Category\AddSubCategory.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Category\Index.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_featuredProduct.cshtml.g.cs
