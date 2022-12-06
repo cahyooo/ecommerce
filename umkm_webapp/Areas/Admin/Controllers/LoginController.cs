@@ -99,8 +99,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
         [Route("profile")]
         public IActionResult Profile(Account account)
         {
-            var currentAccount = db.Accounts.SingleOrDefault(a => a.Username.Equals
-            (account.Username));
+            var currentAccount = db.Accounts.SingleOrDefault(a => a.Id == account.Id);
 
             if (!string.IsNullOrEmpty(account.Password))
             {

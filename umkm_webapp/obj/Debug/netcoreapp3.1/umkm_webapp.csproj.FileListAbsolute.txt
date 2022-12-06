@@ -316,3 +316,4 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_featuredProduct.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Search\Index.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Add.cshtml.g.cs

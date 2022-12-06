@@ -51,10 +51,13 @@
                             <td>@product.Status</td>
                             <td>@product.Category.Name</td>
                             <td>
-                                <a asp-area="admin" asp-controller="product" asp-action="Edit"
-                                   asp-route-id="@product.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
-                                <a class="text-danger" asp-area="admin" asp-controller="product" asp-action="delete"
-                                   asp-route-id="@product.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>
+                                <center>
+                                    <a asp-area="admin" asp-controller="product" asp-action="Edit"
+                                       asp-route-id="@product.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
+                                    <a class="text-danger" asp-area="admin" asp-controller="product" asp-action="delete"
+                                       asp-route-id="@product.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a>
+                                </center>
+                                
                             </td>
                         </tr>
                         { number++; }
