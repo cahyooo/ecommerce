@@ -48,7 +48,18 @@
                         <tr>
                             <td>@number</td>
                             <th><b>@category.Name</b></th>
-                            <td>@(category.Status ? "Show" : "Hide")</td>
+                            <td>
+                                
+                                @if (@category.Status == true)
+                                {
+                                <div class="badge bg-primary text-white rounded-pill">@(category.Status ? "Show" : "Hide")</div>
+                                }
+                                else
+                                {
+                            <div class="badge bg-warning text-white rounded-pill">@(category.Status ? "Show" : "Hide")</div>
+                                }
+
+                            </td>
                             <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
                             <td>
                                 <center>
@@ -73,7 +84,19 @@
                                     <td>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@subCategory.Name
                                     </td>
-                                    <td>@(subCategory.Status ? "Show" : "Hide")</td>
+                                    <td>
+                                        
+                                        @if (@subCategory.Status == true)
+                                        {
+                                        <div class="badge bg-primary text-white rounded-pill">@(subCategory.Status ? "Show" : "Hide")</div>
+                                        }
+                                        else
+                                        {
+                                    <div class="badge bg-warning text-white rounded-pill">@(subCategory.Status ? "Show" : "Hide")</div>
+                                        }
+
+
+                                    </td>
                                     <td>@subCategory.Parent.Name</td>
                                     <td>
                                         <center>
