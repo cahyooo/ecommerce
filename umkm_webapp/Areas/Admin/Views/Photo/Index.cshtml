@@ -13,7 +13,7 @@
         <h6 class="m-0 font-weight-bold text-primary">Photo List</h6>
     </div>
     <div class="card-body">
-       
+
         <div class="table-responsive">
             <table class="table table-bordered" id="dataCategory" width="100%" cellspacing="0">
                 <thead>
@@ -45,11 +45,40 @@
                         <td>@(photo.Status ? "Show" : "Hide")</td>
                         <td>@(photo.Featured ? "Featured" : "")</td>
                         <td>
-                            <a asp-area="admin" asp-controller="photo" asp-action="Edit"
-                               asp-route-id="@photo.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
-                            <a class="text-danger" asp-area="admin" asp-controller="photo" asp-action="delete"
-                               asp-route-id="@photo.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a> <span> | </span>
                             
+                            @if (@photo.Status == true)
+                            {
+                                <div class="badge bg-primary text-white rounded-pill">@(photo.Status ? "Show" : "Hide")</div>
+                            }
+                            else
+                            {
+                                <div class="badge bg-warning text-white rounded-pill">@(photo.Status ? "Show" : "Hide")</div>
+                            }
+
+                        </td>
+                        <td>
+                            
+                            @if (@photo.Featured == true)
+                            {
+                                <div class="badge bg-primary text-white rounded-pill">@(photo.Featured ? "Featured" : "")</div>
+                            }
+                            else
+                            {
+                                <div class="badge bg-warning text-white rounded-pill">@(photo.Featured ? "Featured" : "")</div>
+                            }
+
+                        </td>
+
+                        
+                        <td>
+                            <center>
+                                <a asp-area="admin" asp-controller="photo" asp-action="Edit"
+                                   asp-route-id="@photo.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
+                                <a class="text-danger" asp-area="admin" asp-controller="photo" asp-action="delete"
+                                   asp-route-id="@photo.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a>
+                            </center>
+
+
                         </td>
                     </tr>
                     }

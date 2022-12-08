@@ -300,3 +300,7 @@ D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razo
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Search\Index.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.csproj.AssemblyReference.cache
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Edit.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Add.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Edit.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Photo\Add.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Photo\Index.cshtml.g.cs

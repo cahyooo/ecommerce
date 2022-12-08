@@ -50,7 +50,10 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @{int number = 1; }
+                    @{int number = 1;
+                        String rp = "Rp.";
+
+                     }
 
                     @foreach (var product in ViewBag.Products)
 
@@ -61,14 +64,33 @@
                             <td>@number</td>
                             <td>@product.Name</td>
                             <td><img src="~/product/@Photo.Name" width="120px" /></td>
-                            <td>@product.Price</td>
-                            <td>@product.Status</td>
+                            <td>@rp @product.Price</td>
+                            <td>
+                                @if (@product.Status == true)
+                                {
+                                    <div class="badge bg-primary text-white rounded-pill">@product.Status</div>
+                                }
+                                else
+                                {
+                                    <div class="badge bg-warning text-white rounded-pill">@product.Status</div>
+                                }
+
+                            </td>
                             <td>@product.Category.Name</td>
                             <td>
-                                <a asp-area="admin" asp-controller="product" asp-action="Edit"
-                                   asp-route-id="@product.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
-                                <a class="text-danger" asp-area="admin" asp-controller="product" asp-action="delete"
-                                   asp-route-id="@product.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>
+                                <center>
+                                    <a asp-area="admin" asp-controller="product" asp-action="Edit"
+                                       asp-route-id="@product.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>
+                                    <a class="text-danger" asp-area="admin" asp-controller="product" asp-action="delete"
+                                       asp-route-id="@product.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>
+
+                                    <a asp-area="admin" asp-controller="photo" asp-action="index"
+                                       asp-route-id="@product.Id"> <i class="fa-regular fa-eye fa-lg"></i></a><span> | </span>
+
+                                    <a asp-area="admin" asp-controller="photo" asp-action="add"
+                                       asp-route-id="@product.Id"> <i class="fa-solid fa-plus fa-lg"></i></a>
+                                </center>
+                                
                             </td>
                         </tr>
                         { number++; }

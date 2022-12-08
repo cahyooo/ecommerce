@@ -70,7 +70,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
 
             var defaultPhoto = new Photo
             {
-                Name = "no-image.jpg",
+                Name = "no-image.png",
                 Status = true,
                 ProductId = productViewModel.Product.Id,
                 Featured = true
@@ -84,6 +84,8 @@ namespace umkm_webapp.Areas.Admin.Controllers
         [Route("delete/{id}")]
         public IActionResult Delete(int id)
         {
+
+            
             try
             {
                 var product = db.Products.Find(id);
