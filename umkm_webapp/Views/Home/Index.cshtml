@@ -1,4 +1,5 @@
-﻿<partial name="_slider">
+﻿@using umkm_webapp.Models;
+<partial name="_slider">
 <section class="pt-5 pb-5">
     <div class="container">
         <div class="row">
@@ -44,37 +45,44 @@
         </div>
     </div>
 </section>
-<!-- End Services -->
-    <partial name="_featuredProduct">
 
-<!--<section class="products-grids trending pb-4">
+
+<section class="products-grids trending pb-4">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="section-title">
-                    <h2>Trending Items</h2>
+                    <h2>@(ViewBag.CountFeaturedProducts) Featured Items</h2>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">-->
-            <!-- List Barang -->
+        <div class="row mt-4">
+            @*List Barang*@
 
-            <!--<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+            @foreach (var Featuredproduct in ViewBag.FeaturedProducts)
+            {
+                Product product = (Product)Featuredproduct;
+                Photo photo = product.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
                 <div class="single-product">
                     <div class="product-img">
-                        <a asp-controller="Home" asp-action="details">
-                            <img src="~/user-view/assets/img/products/p1.jpg" class="img-fluid" />
+                        <a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">
+                            <img src="~/product/@photo.Name" class="img-fluid" />
                         </a>
                     </div>
                     <div class="product-content">
-                        <h3><a href="product-detail.html">Cool &amp; Awesome Item</a></h3>
+                        <h3><a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">@Featuredproduct.Name</a></h3>
                         <div class="product-price">
-                            <span>$57.00</span>
+                            <span>Rp. @Featuredproduct.Price </span>
                         </div>
                     </div>
                 </div>
-            </div>-->
-            <!-- END List Barang -->
-        <!--</div>
+                <br />
+            </div>
+                
+            }
+                @*END List Barang*@
+            </div>
     </div>
-</section>-->
+</section>
+

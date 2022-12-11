@@ -1,6 +1,4 @@
-﻿<partial name="_breadcrumb">
-
-@model umkm_webapp.Models.Category
+﻿@using umkm_webapp.Models;
 
 <section class="products-grid pb-4 pt-4">
     <div class="container">
@@ -20,15 +18,29 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="sidebar-widget">
+                        <div class="widget-title">
+                            <h3>LatestProduct</h3>
+                        </div>
+                        <div class="widget-content widget-brands">
+                            @await Component.InvokeAsync("LatestProduct")
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
+                
+
+            </div> 
+
             <div class="col-lg-9 col-md-8 col-12">
                 <div class="row">
                     <div class="col-12">
                         <div class="products-top">
                             <div class="products-top-inner">
                                 <div class="products-found">
-                                    <p><span>25</span> products found of <span>1.342</span></p>
+                                    <p><span> @(ViewBag.CountProducts) </span> products found </p>
                                 </div>
                                 <div class="products-sort">
                                     <span>Sort By : </span>
@@ -42,23 +54,31 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-product">
-                            <div class="product-img">
-                                <a asp-action="details" asp-controller="Home">
-                                    <img src="~/user-view/assets/img/products/p1.jpg" class="img-fluid" />
-                                </a>
-                            </div>
-                            <div class="product-content">
-                                <h3><a asp-action="details" asp-controller="Home">Cool &amp; Awesome Item</a></h3>
-                                <div class="product-price">
-                                    <span>$57.00</span>
+                    @foreach (var product in ViewBag.LatestProducts)
+                    {
+
+                        Product productInfo = (Product)product;
+                        Photo photo = productInfo.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+                        var photoName = photo == null ? "no-image.jpg" : photo.Name;
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-product">
+                                <div class="product-img">
+                                    <a asp-controller="product" asp-action="details" asp-route-id="@product.Id">
+                                        <img src="~/product/@photoName" class="img-fluid" />
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <h3><a asp-controller="product" asp-action="details" asp-route-id="@product.Id">@productInfo.Name</a></h3>
+                                    <div class="product-price">
+                                        <span>Rp. @productInfo.Price</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
 
                 </div>
                 <div class="row">
