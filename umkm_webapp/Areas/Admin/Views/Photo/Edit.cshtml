@@ -7,14 +7,14 @@
 
 <section class="content-header">
     <h1>
-        Add Photo to @ViewBag.Product
+        Edit Photo of @ViewBag.Product.Name
     </h1>
 </section>
 
 <div class="col-lg">
     <div class="card">
         <div class="card-body">
-            <form asp-area="admin" asp-controller="photo" asp-action="add" method="post" enctype="multipart/form-data">
+            <form asp-area="admin" asp-controller="photo" asp-action="edit" method="post" enctype="multipart/form-data">
                 @*Add Photo*@
                 <div class="row mb-3">
                     <div class="col-sm-3">
@@ -22,6 +22,8 @@
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <input class="form-control" name="fileUpload" type="file" accept="image/*">
+                        <br />
+                        <img src="~/product/@Model.Name" width="120" />
                     </div>
                 </div>
                 @*Add Status*@
@@ -48,7 +50,6 @@
 
 
 
-
                 <div class="row">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-9 text-secondary">
@@ -56,6 +57,7 @@
                             Change
                         </button>
                         <input type="hidden" asp-for="ProductId" />
+                        <input type="hidden" asp-for="Id" />
 
                     </div>
                 </div>
