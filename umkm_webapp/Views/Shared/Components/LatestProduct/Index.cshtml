@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+@foreach (var product in Model)
+{
+
+    Product productInfo = (Product)product;
+    Photo photo = productInfo.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+    var photoName = photo == null ? "no-image.jpg" : photo.Name;
+    <div class="col-md">
+        <div class="single-product">
+            <div class="product-img">
+                <a asp-controller="product" asp-action="details" asp-route-id="@product.Id">
+                    <img src="~/product/@photoName" class="img-fluid" />
+                </a>
+            </div>
+            <div class="product-content">
+                <h3><a asp-controller="product" asp-action="details" asp-route-id="@product.Id">@productInfo.Name</a></h3>
+                <div class="product-price">
+                    <span>Rp. @productInfo.Price</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}

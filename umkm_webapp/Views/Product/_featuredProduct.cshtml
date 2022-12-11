@@ -1,0 +1,98 @@
+﻿@*<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@(ViewBag.CountFeaturedProducts) Trending <b>Products</b></h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                @foreach (var Featuredproduct in ViewBag.FeaturedProducts)
+                {
+                    Product product = (Product)Featuredproduct;
+                    Photo photo = product.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <img src="~/product/@photo.Name" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h3>@Featuredproduct.Name</h3>
+                                            <p class="item-price"><span>@Featuredproduct.Name</span></p>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                            </div>
+                                            <a asp-controller="home" asp-action="details" asp-route-id="@Featuredproduct.Id" class="btn btn-primary">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+</div>*@
+
+<section class="products-grids trending pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2>@(ViewBag.CountFeaturedProducts) Featured Items</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            @*List Barang*@
+
+            @foreach (var Featuredproduct in ViewBag.FeaturedProducts)
+            {
+                Product product = (Product)Featuredproduct;
+                Photo photo = product.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                <div class="single-product">
+                    <div class="product-img">
+                        <a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">
+                            <img src="~/product/@photo.Name" class="img-fluid" />
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3><a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">@Featuredproduct.Name</a></h3>
+                        <div class="product-price">
+                            <span>Rp. @Featuredproduct.Price </span>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+                
+            }
+                @*END List Barang*@
+            </div>
+    </div>
+</section>
+

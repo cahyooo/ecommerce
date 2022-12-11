@@ -9,29 +9,50 @@ using umkm_webapp.Models;
 
 namespace umkm_webapp.Controllers
 {
+    [Route("home")]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
+
+        private DatabaseContext db = new DatabaseContext();
+
+        public HomeController(DatabaseContext _db)
         {
-            _logger = logger;
+            db = _db;
         }
+
+        [Route("")]
+        [Route("index")]
+        [Route("~/")]
 
         public IActionResult Index()
         {
+            ViewBag.isHome = true;
+            var featuredproduct = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status && p.Featured).ToList();
+            ViewBag.FeaturedProducts = featuredproduct;
+            ViewBag.CountFeaturedProducts = featuredproduct.Count;
+            return View();
+        }
+      
+        [Route("subproduct")]
+        public IActionResult subproduct()
+        {
+            var product = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status).ToList();
+            ViewBag.Products = product;
+            ViewBag.CountProducts = product.Count;
+            ViewBag.LatestProducts = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status).ToList();
             return View();
         }
 
-        public IActionResult product()
-        {
-            return View();
-        }
+        
 
-        public IActionResult details()
-        {
-            return View();
-        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
