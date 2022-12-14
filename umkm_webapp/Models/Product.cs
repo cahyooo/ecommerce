@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
@@ -21,6 +22,7 @@ namespace umkm_webapp.Models
         public string Description { get; set; }
         public string Details { get; set; }
         public bool Status { get; set; }
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
         public int Quantity { get; set; }
         public int CategoryId { get; set; }

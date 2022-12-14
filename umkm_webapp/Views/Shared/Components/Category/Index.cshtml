@@ -20,11 +20,11 @@
                     {
                         @if (subCategory.Status)
                         {
-                            <a class="collapse-item" href="#">@subCategory.Name</a>
+                            <a class="collapse-item" asp-controller="product" asp-action="category" asp-route-id="@subCategory.Id">@subCategory.Name</a>
                         }
                     }
                 </div>
-                
+                  
             </div>
         }
 
