@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using umkm_webapp.Models;
+using X.PagedList;
 
 namespace umkm_webapp.Controllers
 {
@@ -41,12 +42,15 @@ namespace umkm_webapp.Controllers
         }
       
         [Route("subproduct")]
-        public IActionResult subproduct()
+        public IActionResult subproduct(int? page)
         {
+            var pageNumber = page ?? 1;
+           
             var product = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status).ToList();
             ViewBag.Products = product;
             ViewBag.CountProducts = product.Count;
             ViewBag.LatestProducts = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status).ToList();
+            ViewBag.Products = product.Where(c => c.Status).ToList().ToPagedList(pageNumber, 1);
             return View();
         }
 
