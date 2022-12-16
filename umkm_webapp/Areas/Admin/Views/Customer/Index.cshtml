@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Category";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<section class="content-header">
+    <h1>
+        Customer List
+    </h1>
+</section>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Customer List</h6>
+    </div>
+    <div class="card-body">
+
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataCategory" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Username</th>
+                        <th>FullName</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Id</th>
+                        <th>Username</th>
+                        <th>FullName</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @{int number = 1; }
+
+                    @foreach (var customer in ViewBag.Customers)
+                    {
+                    <tr>
+                        <td>@customer.Id</td>
+                        <td>@customer.Username</td>
+                        <td>@customer.FullName</td>
+                        <td>@customer.Email</td>
+                        <td>@(customer.Status ? "Active" : "Inactive")</td>
+
+
+
+
+                        <td>
+                            <center>
+                                <a asp-area="admin" asp-controller="customer" asp-action="Edit"
+                                   asp-route-id="@customer.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a>
+                              
+
+                            </center>
+
+
+                        </td>
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
