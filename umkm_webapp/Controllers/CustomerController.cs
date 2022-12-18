@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using umkm_webapp.Models;
 using umkm_webapp.Security;
@@ -32,23 +34,32 @@ namespace umkm_webapp.Controllers
         [Route("register")]
         public IActionResult Register(Account account)
         {
-            account.Password = BCrypt.Net.BCrypt.HashPassword(account.Password);
-            account.Status = true;
-            db.Accounts.Add(account);
-            db.SaveChanges();
-
-            //Add Role 
-
-            var roleAccount = new RoleAccount()
+            var exist = db.Accounts.Count(a => a.Username.Equals(account.Username)) > 0;
+            if (!exist)
             {
-                RoleId = 2,
-                AccountId = account.Id,
-                Status = true
+                account.Password = BCrypt.Net.BCrypt.HashPassword(account.Password);
+                account.Status = true;
+                db.Accounts.Add(account);
+                db.SaveChanges();
 
-            };
-            db.RoleAccounts.Add(roleAccount);
-            db.SaveChanges();
-            return RedirectToAction("index", "home");
+                //Add Role 
+
+                var roleAccount = new RoleAccount()
+                {
+                    RoleId = 2,
+                    AccountId = account.Id,
+                    Status = true
+
+                };
+                db.RoleAccounts.Add(roleAccount);
+                db.SaveChanges();
+                return RedirectToAction("index", "home");
+            }
+            else
+            {
+                ViewBag.error = "Username Exist";
+                return View("register", account);
+            }
         }
 
         [HttpGet]
@@ -101,6 +112,39 @@ namespace umkm_webapp.Controllers
             securityManager.SignOut(this.HttpContext);
             return RedirectToAction("index", "home");
 
+        }
+
+        [Authorize(Roles = "Customer")]
+        [HttpGet]
+        [Route("profile")]
+        public IActionResult Profile()
+        {
+            var user = User.FindFirst(ClaimTypes.Name);
+            var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
+            return View("Profile", customer);
+        }
+
+        [HttpPost]
+        [Route("profile")]
+        public IActionResult Profile(Account account)
+        {
+            var currentCustomer = db.Accounts.Find(account.Id);
+            if (!string.IsNullOrEmpty(account.Password))
+            {
+                currentCustomer.Password = BCrypt.Net.BCrypt.HashPassword(account.Password);
+            }
+            currentCustomer.FullName = account.FullName;
+            currentCustomer.Email = account.Email;
+            db.SaveChanges();
+            return View("profile", currentCustomer);
+        }
+
+        [HttpGet]
+        [Route("Dashboard")]
+        public IActionResult Dashboard()
+        {
+            
+            return View("Dashboard");
         }
 
     }

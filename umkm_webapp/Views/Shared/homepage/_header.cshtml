@@ -27,9 +27,9 @@
                                     <i class="fa fa-user-circle-o"></i>
                                     <a href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Welcome @user.Value</a>
                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                        <a class="dropdown-item">
+                                        <a class="dropdown-item" asp-controller="customer" asp-action="profile">
                                             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Profile
+                                            Change Profile
                                         </a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
