@@ -43,7 +43,7 @@
                 <div class="product-detail">
                     <h2 class="product-name">@ViewBag.Product.Name</h2>
                     <div class="product-price">
-                        <span class="price">IDR @ViewBag.Product.Price </span>
+                        <span class="price">IDR @string.Format("{0:##,#}", @ViewBag.Product.Price) </span>
                     </div>
                     <hr />
                     <div class="product-short-desc">
@@ -59,10 +59,11 @@
                         <form>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <input type="number" class="form-control" value="1" min="0" />
+                                    <input type="number" class="form-control" name="quantity" value="1" min="0" />
                                 </div>
                                 <div class="col-md-5">
-                                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalAbandonedCart">Add to Cart</button>
+                                    <input type="hidden" name="id" value="@ViewBag.Product.Id" />
+                                    <button type="button" class="btn btn-primary btn-block" asp-controller="cart" asp-action="buy">Add to Cart</button>
                                 </div>
                                 <div class="col-md-4">
                                     <a href="#" class="btn btn-secondary"><i class="fa fa-heart-o"></i></a>
@@ -77,35 +78,63 @@
                 <br /><br /><br /><br /><br /><br /><hr />
                 <section class="products-grids trending pb-4">
                     <div class="container">
+
+                        @{int cek = @ViewBag.CountRelatedProducts; }
+
+                        @if (cek > 0)
+                        {
                         <div class="row">
                             <div class="col-12">
                                 <div class="section-title">
-                                    <h2>@(ViewBag.CountFeaturedProducts) Related Items</h2>
+                                    <h2>@(ViewBag.CountRelatedProducts) Related Items</h2>
                                 </div>
                             </div>
                         </div>
+                        }
+
+
+
                         <div class="row mt-4">
-                            @*List Barang*@
 
                             @foreach (var product in ViewBag.RelatedProducts)
                             {
                                 Product productInfo = (Product)product;
                                 Photo photo = productInfo.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+
+
                                 <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+
                                     <div class="single-product">
-                                        <div class="product-img">
-                                            <a asp-controller="product" asp-action="details" asp-route-id="@productInfo.Id">
-                                                <img src="~/product/@photo.Name" class="img-fluid" />
-                                            </a>
-                                        </div>
-                                        <div class="product-content">
-                                            <h3><a asp-controller="product" asp-action="details" asp-route-id="@productInfo.Id">@productInfo.Name</a></h3>
-                                            <div class="product-price">
-                                                <span>Rp. @productInfo.Price </span>
+
+                                        <!-- Sale badge-->
+                                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                                        <!-- Product image-->
+                                        <a asp-controller="product" asp-action="details" asp-route-id="@product.Id">
+                                            <img class="card-img-top" src="~/product/@photo.Name" alt="..." />
+                                        </a>
+
+                                        <!-- Product details-->
+                                        <div class="card-body p-4">
+                                            <div class="text-center">
+                                                <!-- Product name-->
+                                                <h5 class="fw-bolder">@productInfo.Name</h5>
+                                                <!-- Product reviews-->
+                                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <!-- Product price-->
+                                                Rp. @string.Format("{0:##,#}", @productInfo.Price)
                                             </div>
                                         </div>
+                                        <!-- Product actions-->
+                                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-controller="cart" asp-action="buy">Add to cart</a></div>
+                                        </div>
                                     </div>
-                                    <br />
                                 </div>
 
                             }

@@ -63,22 +63,37 @@
             {
                 Product product = (Product)Featuredproduct;
                 Photo photo = product.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
-            <div class="col-xl-3 col-lg-4 col-md-4 col-12">
-                <div class="single-product">
-                    <div class="product-img">
-                        <a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">
-                            <img src="~/product/@photo.Name" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="product-content">
-                        <h3><a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id">@Featuredproduct.Name</a></h3>
-                        <div class="product-price">
-                            <span>Rp. @Featuredproduct.Price </span>
+                <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                    <div class="single-product">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <!-- Product image-->
+                        <a asp-controller="product" asp-action="details" asp-route-id="@Featuredproduct.Id"><img class="card-img-top" src="~/product/@photo.Name" alt="..." /></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">@Featuredproduct.Name</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <!-- Product price-->
+                                Rp. Rp.@string.Format("{0:##,#}", @Featuredproduct.Price)
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" asp-controller="cart" asp-action="buy">Add to cart</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <br />
-            </div>
                 
             }
                 @*END List Barang*@

@@ -6,16 +6,22 @@ using umkm_webapp.Models;
 
 namespace umkm_webapp.ViewComponents
 {
-    [ViewComponent(Name = "Login")]
-    public class LoginViewComponent : ViewComponent
+    [ViewComponent(Name = "CartTop")]
+    public class CartTopViewComponent : ViewComponent
     {
-        
+        private DatabaseContext db;
+        public CartTopViewComponent(DatabaseContext _db)
+        {
+            this.db = _db;
+        }
 
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            
-            return View("Login");
+            return View("Index");
         }
+
+        
+
     }
 }

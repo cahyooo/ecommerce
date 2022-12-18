@@ -248,7 +248,9 @@ D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razo
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_topBar.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\details.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\product.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_breadcrumb.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\_slider.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -317,25 +319,7 @@ C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Register.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Login\Login.cshtml.g.cs
 C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutRegister.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\X.PagedList.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\bin\Debug\netcoreapp3.1\X.PagedList.Mvc.Core.dll
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\umkm_webapp.MvcApplicationPartsAssemblyInfo.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Photo\Add.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Photo\Edit.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Photo\Index.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Profile.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Register.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\subproduct.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Category.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Details.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Search.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Product\_featuredProduct.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LatestProduct\Index.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Login\Login.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutRegister.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\Index.cshtml.g.cs
-D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\Edit.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\Edit.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Customer\Index.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Profile.cshtml.g.cs
+C:\Users\asus\source\repos\umkm_webapp\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartTop\Index.cshtml.g.cs

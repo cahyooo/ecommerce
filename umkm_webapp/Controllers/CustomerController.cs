@@ -121,6 +121,8 @@ namespace umkm_webapp.Controllers
         {
             var user = User.FindFirst(ClaimTypes.Name);
             var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
+            ViewBag.Profile = customer;
+
             return View("Profile", customer);
         }
 
@@ -135,7 +137,10 @@ namespace umkm_webapp.Controllers
             }
             currentCustomer.FullName = account.FullName;
             currentCustomer.Email = account.Email;
+            var user = User.FindFirst(ClaimTypes.Name);
             db.SaveChanges();
+            var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
+            ViewBag.Profile = customer;
             return View("profile", currentCustomer);
         }
 
@@ -143,7 +148,7 @@ namespace umkm_webapp.Controllers
         [Route("Dashboard")]
         public IActionResult Dashboard()
         {
-            
+
             return View("Dashboard");
         }
 

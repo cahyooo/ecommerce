@@ -76,7 +76,7 @@
 
                         }
 
-                        <td>@rp @product.Price</td>
+                    <td>@rp @string.Format("{0:##,#}", @product.Price)</td>
                         <td>
                             @if (@product.Status == true)
                             {
