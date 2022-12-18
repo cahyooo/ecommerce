@@ -89,7 +89,7 @@
                                 <div class="product-content">
                                     <h3><a asp-controller="product" asp-action="details" asp-route-id="@product.Id">@productInfo.Name</a></h3>
                                     <div class="product-price">
-                                        <span>Rp. @productInfo.Price</span>
+                                        <span>Rp. @string.Format("{0:##,#}", @productInfo.Price)</span>
                                     </div>
                                 </div>
                             </div>

@@ -30,8 +30,9 @@ namespace umkm_webapp.Controllers
 
             var featuredproduct = db.Products.OrderByDescending(p => p.Id).Where(p => p.Status && p.Featured).ToList();
             ViewBag.FeaturedProducts = featuredproduct;
-
-            ViewBag.RelatedProducts = db.Products.Where(p => p.CategoryId == product.CategoryId && p.Id != id && p.Status).Take(4).ToList();
+            var relatedProduct = db.Products.Where(p => p.CategoryId == product.CategoryId && p.Id != id && p.Status).Take(4).ToList();
+            ViewBag.CountRelatedProducts = relatedProduct.Count(p => p.Status);
+            ViewBag.RelatedProducts = relatedProduct;
 
             
 
