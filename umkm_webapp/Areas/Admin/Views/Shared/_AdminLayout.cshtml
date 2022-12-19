@@ -65,7 +65,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-cart-shopping"></i>
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
                     <span>Category</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -85,9 +85,23 @@
                 </a>
                 <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Category</h6>
+                        <h6 class="collapse-header">Products</h6>
                         <a class="collapse-item" asp-area="admin" asp-controller="product" asp-action="add">Add</a>
                         <a class="collapse-item" asp-area="admin" asp-controller="product" asp-action="index">List</a>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo2"
+                   aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-user fa-sm fa-fw mr-2"></i>
+                    <span>Customer</span>
+                </a>
+                <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Customer</h6>
+                        <a class="collapse-item" asp-area="admin" asp-controller="customer" asp-action="index">List</a>
 
                     </div>
                 </div>
