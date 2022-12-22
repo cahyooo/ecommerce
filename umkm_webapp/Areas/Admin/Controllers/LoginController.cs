@@ -48,7 +48,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
             }
         }
 
-        
+
         private Account processLogin(string username, string password)
         {
             var account = db.Accounts.SingleOrDefault(a => a.Username.Equals(username) && a.Status == true);
@@ -91,7 +91,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
                 return RedirectToAction("index", "login", new { area = "admin" });
             }
 
-            
+
 
         }
 
@@ -108,6 +108,8 @@ namespace umkm_webapp.Areas.Admin.Controllers
             currentAccount.Username = account.Username;
             currentAccount.Email = account.Email;
             currentAccount.FullName = account.FullName;
+            currentAccount.Address = account.Address;
+            currentAccount.Phone = account.Phone;
             db.SaveChanges();
             return View("profile");
 

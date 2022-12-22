@@ -34,7 +34,7 @@ namespace umkm_webapp.Areas.Admin.Controllers
         {
             var customers = db.Accounts.Find(Id);
             return View("Edit", customers);
-            
+
         }
 
         [HttpPost]
@@ -42,18 +42,21 @@ namespace umkm_webapp.Areas.Admin.Controllers
         public IActionResult Edit(int Id, Account account)
         {
             var customers = db.Accounts.Find(Id);
-            
+
             if (!string.IsNullOrEmpty(account.Password))
             {
                 customers.Password = BCrypt.Net.BCrypt.HashPassword(account.Password);
             }
             customers.FullName = account.FullName;
             customers.Email = account.Email;
+            customers.Address = account.Address;
             customers.Status = account.Status;
+            customers.Phone = account.Phone;
             db.SaveChanges();
+
             return RedirectToAction("Index", "Customer", new { area = "admin" });
 
         }
     }
-    
+
 }

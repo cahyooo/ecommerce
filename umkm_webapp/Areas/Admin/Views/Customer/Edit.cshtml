@@ -1,5 +1,4 @@
-﻿
-@{ ViewData["Title"] = "Edit Category";
+﻿@{ ViewData["Title"] = "Edit Category";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml"; }
 
 @model umkm_webapp.Models.Account
@@ -44,6 +43,22 @@
                     </div>
                     <div class="col-sm-9 text-secondary">
                         <input class="form-control" id="Email" asp-for="Email" type="text" required="required">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Address</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input class="form-control" id="Address" asp-for="Address" type="text" required="required">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Phone</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <input class="form-control" id="Phone" asp-for="Phone" type="text" required="required">
                     </div>
                 </div>
 

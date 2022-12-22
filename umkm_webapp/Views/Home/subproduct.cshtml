@@ -55,12 +55,8 @@
                                     <p><span> @(ViewBag.CountProducts) </span> products found </p>
                                 </div>
                                 <div class="products-sort">
-                                    <span>Sort By : </span>
-                                    <select>
-                                        <option>Default</option>
-                                        <option>Price</option>
-                                        <option>Recent</option>
-                                    </select>
+                                    <span>:</span>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -106,20 +102,12 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-controller="cart" asp-action="buy">Add to cart</a></div>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-controller="cart" asp-action="buy" asp-route-id="@product.Id">Add to cart</a></div>
                                 </div>
                             </div>
                         </div>
-                        
-
                     }
-                    @*<div class="row">
-            <div class="col-12">
-                <ul class="pagination">
-                    @Html.PagedListPager((IPagedList)ViewBag.Products, page => Url.Action("subproduct", "home", new { page = page }))
-                </ul>
-            </div>
-        </div>*@
+                    
                 </div>
         </div>
     </div>

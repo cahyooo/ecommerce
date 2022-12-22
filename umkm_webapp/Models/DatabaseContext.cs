@@ -26,6 +26,8 @@ namespace umkm_webapp.Models
         public virtual DbSet<RoleAccount> RoleAccounts { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Photo> Photos { get; set; }
+        public virtual DbSet<Invoice> Invoices { get; set; }
+        public virtual DbSet<InvoiceDetails> InvoiceDetailses { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -87,6 +89,35 @@ namespace umkm_webapp.Models
 
             });
 
+            modelBuilder.Entity<Invoice>(entity =>
+            {
+
+                entity.HasOne(d => d.Account)
+                    .WithMany(p => p.Invoices)
+                    .HasForeignKey(d => d.AccountId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Invoice_Account");
+
+            });
+
+            modelBuilder.Entity<InvoiceDetails>(entity =>
+            {
+
+                entity.HasKey(e => new { e.InvoiceId, e.ProductId });
+
+                entity.HasOne(d => d.Invoice)
+                    .WithMany(p => p.InvoiceDetailses)
+                    .HasForeignKey(d => d.InvoiceId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_InvoiceDetails_Invoice");
+
+                entity.HasOne(d => d.Product)
+                   .WithMany(p => p.InvoiceDetailses)
+                   .HasForeignKey(d => d.ProductId)
+                   .OnDelete(DeleteBehavior.ClientSetNull)
+                   .HasConstraintName("FK_InvoiceDetails_Product");
+
+            });
 
             OnModelCreatingPartial(modelBuilder);
         }

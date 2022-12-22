@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-6 text-left">
                         <ul class="top-links contact-info">
-                            <li><i class="fa fa-envelope-o"></i> <a href="#">contact@example.com</a></li>
+                            <li><i class="fa fa-envelope-o"></i> <a href="#">care@angkatsikat.com</a></li>
                             <li><i class="fa fa-whatsapp"></i> +1 5589 55488 55</li>
                         </ul>
                     </div>
@@ -28,7 +28,7 @@
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" asp-controller="customer" asp-action="profile">
                                             <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                            Change Profile
+                                            Profile
                                         </a>
                                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
                                     </div>
@@ -44,7 +44,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-12 col-sm-6">
                         <a asp-controller="Home" asp-action="Index">
-                            <img src="~/navbar.png" /> @*<span class="logo">IndoMarket</span>*@
+                            <img src="~/navbar.png" />
                         </a>
                     </div>
                     <div class="col-lg-7 col-12 col-sm-6">
@@ -57,10 +57,7 @@
                     </div>
                     <div class="col-lg-2 col-12 col-sm-6">
                         <div class="right-icons pull-right d-none d-lg-block">
-                            <div class="single-icon wishlist">
-                                <a href="#"><i class="fa fa-heart-o fa-2x"></i></a>
-                                <span class="badge badge-default">5</span>
-                            </div>
+                           
                             @await Component.InvokeAsync("CartTop")
                         </div>
                     </div>
@@ -79,9 +76,6 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a class="nav-link" asp-action="Index" asp-controller="Home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="true">Pages</a>

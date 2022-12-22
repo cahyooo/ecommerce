@@ -137,6 +137,8 @@ namespace umkm_webapp.Controllers
             }
             currentCustomer.FullName = account.FullName;
             currentCustomer.Email = account.Email;
+            currentCustomer.Address = account.Address;
+            currentCustomer.Phone = account.Phone;
             var user = User.FindFirst(ClaimTypes.Name);
             db.SaveChanges();
             var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
@@ -150,6 +152,32 @@ namespace umkm_webapp.Controllers
         {
 
             return View("Dashboard");
+        }
+
+        [Authorize(Roles = "Customer")]
+        [HttpGet]
+        [Route("History")]
+        public IActionResult History()
+        {
+            var user = User.FindFirst(ClaimTypes.Name);
+            var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
+            ViewBag.invoices = customer.Invoices.OrderByDescending(i => i.Id).ToList();
+            return View("History");
+        }
+
+        [Authorize(Roles = "Customer")]
+        [HttpGet]
+        [Route("details/{id}")]
+        public IActionResult Details(int id)
+        {
+            var user = User.FindFirst(ClaimTypes.Name);
+            ViewBag.CustomerDetails = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));
+            ViewBag.invoiceDetails = db.InvoiceDetailses.Where(i => i.InvoiceId == id).ToList();
+            var invoice = db.InvoiceDetailses.Where(i => i.InvoiceId == id).ToList();
+            ViewBag.Total =invoice.Sum(it => it.Price * it.Quantity);
+            
+
+            return View("Details");
         }
 
     }
