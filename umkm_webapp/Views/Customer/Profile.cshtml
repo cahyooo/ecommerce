@@ -75,6 +75,14 @@
                                                 <h6>Username</h6>
                                                 <p class="text-muted">@ViewBag.Profile.Username</p>
                                             </div>
+                                            <div class="col-6 mb-3">
+                                                <h6>Address</h6>
+                                                <p class="text-muted">@ViewBag.Profile.Address</p>
+                                            </div>
+                                            <div class="col-6 mb-3">
+                                                <h6>Phone Number</h6>
+                                                <p class="text-muted">@ViewBag.Profile.Phone</p>
+                                            </div>
                                         </div>
                                         <div class="d-flex justify-content-start">
                                             <a data-toggle="modal" data-target="#ChangePF" href="#" class="btn-circle"><i class="fa-solid fa-pen-to-square fa-lg"></i></a>
@@ -110,6 +118,14 @@
                         <label class="small mb-1" for="inputUsername1">FullName</label>
                         <input class="form-control" id="inputUsername1" type="text" placeholder="Enter your FullName" name="FullName" asp-for="FullName" />
                     </div>
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputUsername2">Address</label>
+                        <input class="form-control" id="inputUsername2" type="text" placeholder="Enter your Address" name="address" asp-for="Address" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputUsername2">Phone</label>
+                        <input class="form-control" id="inputUsername2" type="text" placeholder="Enter your Phone Number" name="phone" asp-for="Phone" />
+                    </div>
 
                     <div class="row gx-3">
                         <div class="mb-3 col-md-6">
@@ -118,7 +134,7 @@
                         </div>
                         <div class="mb-3 col-md-6">
                             <label class="small mb-1" for="inputPassword">Password</label>
-                            <input class="form-control" id="inputPassword" type="password" placeholder="Enter your Password" name="password" asp-for="Password" />
+                            <input class="form-control" id="inputPassword" type="password" placeholder="Enter your Password" name="password" asp-for="Password"  readonly="readonly"/>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">

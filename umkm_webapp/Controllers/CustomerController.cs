@@ -137,6 +137,8 @@ namespace umkm_webapp.Controllers
             }
             currentCustomer.FullName = account.FullName;
             currentCustomer.Email = account.Email;
+            currentCustomer.Address = account.Address;
+            currentCustomer.Phone = account.Phone;
             var user = User.FindFirst(ClaimTypes.Name);
             db.SaveChanges();
             var customer = db.Accounts.SingleOrDefault(a => a.Username.Equals(user.Value));

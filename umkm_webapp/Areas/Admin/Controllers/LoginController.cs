@@ -108,6 +108,8 @@ namespace umkm_webapp.Areas.Admin.Controllers
             currentAccount.Username = account.Username;
             currentAccount.Email = account.Email;
             currentAccount.FullName = account.FullName;
+            currentAccount.Address = account.Address;
+            currentAccount.Phone = account.Phone;
             db.SaveChanges();
             return View("profile");
 

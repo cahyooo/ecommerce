@@ -49,8 +49,11 @@ namespace umkm_webapp.Areas.Admin.Controllers
             }
             customers.FullName = account.FullName;
             customers.Email = account.Email;
+            customers.Address = account.Address;
             customers.Status = account.Status;
+            customers.Phone = account.Phone;
             db.SaveChanges();
+
             return RedirectToAction("Index", "Customer", new { area = "admin" });
 
         }
