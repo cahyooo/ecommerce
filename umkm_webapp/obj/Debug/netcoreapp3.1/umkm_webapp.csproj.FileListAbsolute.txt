@@ -344,3 +344,7 @@ D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razo
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\LatestProduct\Index.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Login\Login.cshtml.g.cs
 D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutRegister.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Thanks.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Login.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Details.cshtml.g.cs
+D:\MSIB 3\Github\FinalProject\ecommerce\umkm_webapp\obj\Debug\netcoreapp3.1\Razor\Views\Customer\History.cshtml.g.cs

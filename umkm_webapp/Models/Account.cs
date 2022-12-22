@@ -14,6 +14,7 @@ namespace umkm_webapp.Models
         public Account()
         {
             RoleAccounts = new HashSet<RoleAccount>();
+            Invoices = new HashSet<Invoice>();
         }
 
         public int Id { get; set; }
@@ -24,5 +25,7 @@ namespace umkm_webapp.Models
         public bool Status { get; set; }
 
         public virtual ICollection<RoleAccount> RoleAccounts { get; set; }
+
+        public virtual ICollection<Invoice> Invoices { get; set; }
     }
 }

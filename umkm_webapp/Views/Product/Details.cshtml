@@ -56,15 +56,15 @@
                         <span class="price"><b>Stock @ViewBag.Product.Quantity</b></span>
                     </div>
                     <div class="product-select">
-                        <form>
+                        <form  asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.Id">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <input type="number" class="form-control" name="quantity" value="1" min="0" />
+                                    <input type="number" class="form-control" name="quantity" value="1" min="1" />
                                 </div>
                                 <div class="col-md-5">
                                     <input type="hidden" name="id" value="@ViewBag.Product.Id" />
 
-                                    <button type="submit" class="btn btn-primary btn-block" asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.Id">Add to Cart</button>
+                                    <button type="submit" class="btn btn-primary btn-block">Add to Cart</button>
                                 </div>
                                 <div class="col-md-4">
                                     <a href="#" class="btn btn-secondary"><i class="fa fa-heart-o"></i></a>

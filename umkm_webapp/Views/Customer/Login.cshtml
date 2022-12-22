@@ -1,0 +1,31 @@
+﻿<center>
+    <h1> Dear Customer, </h1>
+    </br></br></br></br>
+
+    <h2> <a data-toggle="modal" data-target="#exampleModal" href="#"><h1><i class="fa fa-power-off"></i></h1></a></h2>
+    <a data-toggle="modal" data-target="#exampleModal" href="#"><h6>Click Me To Login</h6></a>
+
+
+    </br></br></br></br>
+    <h1>You Must Login To Checkout Your Product</h1>
+
+</center>
+<div id="exampleModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="avatar">
+                    <img src="~/Logo_Angkat.png" alt="Avatar">
+                </div>
+                <h4 class="modal-title">Sign In</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                @await Component.InvokeAsync("Login")
+            </div>
+            <div class="modal-footer">
+                <a asp-controller="Customer" asp-action="Register">SignUp</a>
+            </div>
+        </div>
+    </div>
+</div>
