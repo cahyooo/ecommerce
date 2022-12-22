@@ -59,9 +59,10 @@ namespace umkm_webapp
 
 
 
-
+          
             services.AddMvc();
             services.AddSession();
+            services.AddMvc().AddSessionStateTempDataProvider();
             services.AddControllersWithViews();
 
             //var connection = Configuration.GetConnectionString("MyConnection");

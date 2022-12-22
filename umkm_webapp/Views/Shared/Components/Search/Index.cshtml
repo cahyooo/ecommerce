@@ -1,0 +1,55 @@
+﻿@{ 
+    Layout = null;
+}
+
+@*<form method="post" asp-controller="product" asp-action="search">
+    <input id="srchFld" class="srchTxt" type="text" name="keyword">
+    <select class="srchTxt">
+        @foreach (var category in Model)
+        {
+            @if (category.InverseParents != null && category.InverseParents.Count > 0)
+            {
+                <optgroup label="@category.Name">
+                    @foreach (var subCategory in category.InverseParents)
+                    {
+                        <option value="@subCategory.Id">@subCategory.Name</option>
+                    }
+                </optgroup>
+            }
+            else
+            {
+                <option value="@category.Id">@category.Name</option>
+            }
+        }
+    </select>
+</form>*@
+
+<form class="search" method="get" asp-controller="product" asp-action="search">
+    <div class="input-group w-100">
+        <input type="text" class="form-control" name="keyword" placeholder="Search" value="@Model.keyword">
+        <div class="input-group-append">
+            @*<select class="form-control">
+                @foreach (var category in Model)
+                {
+                    @if (category.InverseParents != null && category.InverseParents.Count > 0)
+                    {
+                        <optgroup label="@category.Name">
+                            @foreach (var subCategory in category.InverseParents)
+                            {
+                                <option value="@subCategory.Id">@subCategory.Name</option>
+                            }
+                        </optgroup>
+                    }
+                    else
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+                }
+            </select>*@
+            <button class="btn btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+</form>
+

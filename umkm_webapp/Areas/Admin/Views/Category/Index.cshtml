@@ -1,15 +1,28 @@
 ﻿@{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Category";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+@model umkm_webapp.Models.Category
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Category</h6>
     </div>
     <div class="card-body">
+        @if (TempData["Error"] != null)
+        {
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+                        <h4><i class="icon fa fa-ban"></i>Alert</h4>
+                        Delete Failed !
+                    </div>
+                </div>
+            </div>
+        }
         <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <table class="table table-bordered" id="dataCategory" width="100%" cellspacing="0">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -29,28 +42,42 @@
                     </tr>
                 </tfoot>
                 <tbody>
-                    @{int number = 1;                  }
+                    @{int number = 1; }
 
                     @foreach (var category in ViewBag.categories)
                     {
                         <tr>
                             <td>@number</td>
                             <th><b>@category.Name</b></th>
-                            <td>@(category.Status ? "Show" : "Hide")</td>
+                            <td>
+
+                                @if (@category.Status == true)
+                                {
+                                    <div class="badge bg-primary text-white rounded-pill">@(category.Status ? "Show" : "Hide")</div>
+                                }
+                                else
+                                {
+                                    <div class="badge bg-warning text-white rounded-pill">@(category.Status ? "Show" : "Hide")</div>
+                                }
+
+                            </td>
                             <td>@(category.Parent == null ? "" : @category.Parent.Name)</td>
                             <td>
-                                <a asp-area="admin" asp-controller="category" asp-action="Edit"
-                                   asp-route-id="@category.Id" class="btn btn-primary"> Edit</a><span> | </span>@if (category.InverseParents != null && category.InverseParents.Count == 0)
-                                {
-                            <a class="btn btn-danger" asp-area="admin" asp-controller="category" asp-action="delete"
-                               asp-route-id="@category.Id" onclick="return confirm('Are You Sure?') class="btn btn-danger""> Delete</a><span> | </span>}<a  class="btn btn-warning" asp-area="admin" asp-controller="category" asp-action="AddSubCategory"
-   asp-route-id="@category.Id"> Add Sub Category</a>
-                                
+                                <center>
+                                    <a asp-area="admin" asp-controller="category" asp-action="Edit"
+                                       asp-route-id="@category.Id"> <i class="fa-solid fa-pen-to-square fa-lg"></i></a><span> | </span>@if (category.InverseParents != null && category.InverseParents.Count == 0)
+                                    {
+                                        <a class="text-danger" asp-area="admin" asp-controller="category" asp-action="delete"
+                                           asp-route-id="@category.Id" onclick="return confirm('Are You Sure?') "><i class="fas fa-trash fa-lg"></i></a><span> | </span>}<a class="text-success" asp-area="admin" asp-controller="category" asp-action="AddSubCategory"
+                                                                                                                                                                            asp-route-id="@category.Id"><i class="fa-solid fa-cart-plus fa-lg"></i></a>
+                                </center>
+
+
                             </td>
                         </tr>
                         if (category.InverseParents != null && category.InverseParents.Count != 0)
                         {
-                           
+
                             foreach (var subCategory in category.InverseParents)
                             {
                                 <tr>
@@ -58,16 +85,35 @@
                                     <td>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@subCategory.Name
                                     </td>
-                                    <td>@(subCategory.Status ? "Show" : "Hide")</td>
+                                    <td>
+
+                                        @if (@subCategory.Status == true)
+                                        {
+                                            <div class="badge bg-primary text-white rounded-pill">@(subCategory.Status ? "Show" : "Hide")</div>
+                                        }
+                                        else
+                                        {
+                                            <div class="badge bg-warning text-white rounded-pill">@(subCategory.Status ? "Show" : "Hide")</div>
+                                        }
+
+
+                                    </td>
                                     <td>@subCategory.Parent.Name</td>
-                                    <td><a asp-area="admin" asp-controller="category" asp-action="Edit"
-   asp-route-id="@subCategory.Id" class="btn btn-primary"> Edit</a> | <a asp-area="admin" asp-controller="category" asp-action="delete"
-   asp-route-id="@subCategory.Id" onclick="return confirm('Are You Sure?')" class="btn btn-danger"> Delete</a> </td>
+                                    <td>
+                                        <center>
+                                            <a asp-area="admin" asp-controller="category" asp-action="Edit"
+                                               asp-route-id="@subCategory.Id"><i class="fa-solid fa-pen-to-square fa-lg"></i></a> | <a asp-area="admin" asp-controller="category" asp-action="delete"
+                                                                                                                                       asp-route-id="@subCategory.Id" onclick="return confirm('Are You Sure?')" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                        </center>
+
+                                    </td>
                                 </tr>
                             }
                         }
                         { number++; }
                     }
+
+
                 </tbody>
             </table>
         </div>

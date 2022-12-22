@@ -2356,15 +2356,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+    color: #fff;
+    background-color: #fb6340;
+    border-color: #fb6340;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2e59d9;
-  border-color: #2653d4;
+  background-color: #fa441b;
+  border-color: #fa441b;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -4795,8 +4795,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #fb6340;
+  border-color: #fb6340;
 }
 
 .page-item.disabled .page-link {
@@ -9900,14 +9900,13 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-color: #fb6340;
   background-size: cover;
 }
 
 .bg-gradient-secondary {
-  background-color: #858796;
-  background-image: linear-gradient(180deg, #858796 10%, #60616f 100%);
+  background-color: #faab78;
+ 
   background-size: cover;
 }
 

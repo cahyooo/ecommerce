@@ -1,0 +1,129 @@
+﻿@*@using umkm_webapp.Models;*@
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Common;
+
+
+
+
+<section class="breadcrumb-section pb-3 pt-3">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="index">Home</a></li>
+            <li class="breadcrumb-item"><a asp-controller="home" asp-action="subproduct">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewBag.Category.Name</li>
+        </ol>
+    </div>
+</section>
+
+<section class="products-grid pb-4 pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="sidebar">
+                    <div class="sidebar-widget">
+                        <div class="widget-title">
+                            <h3>Categories</h3>
+                        </div>
+
+                        <div class="widget-content widget-categories">
+                            <div id="wrapper">
+
+                                @await Component.InvokeAsync("Category")
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <div class="widget-title">
+                            <h3>LatestProduct</h3>
+                        </div>
+                        <div class="widget-content widget-brands">
+                            @await Component.InvokeAsync("LatestProduct")
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="col-lg-9 col-md-8 col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="products-top">
+                            <div class="products-top-inner">
+                                <div class="products-found">
+                                    <p>Categories @(ViewBag.Category.Name) <span>@(ViewBag.CountProducts) </span> products found </p>
+                                </div>
+                                <div class="products-sort">
+                                    <span>Sort By : </span>
+                                    <select>
+                                        <option>Default</option>
+                                        <option>Price</option>
+                                        <option>Recent</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    @foreach (var product in ViewBag.Products)
+                    {
+
+                        Product productInfo = (Product)product;
+                        Photo photo = productInfo.Photos.SingleOrDefault(ph => ph.Status && ph.Featured);
+                        var photoName = photo == null ? "no-image.jpg" : photo.Name;
+                    <div class="col-lg-4 col-md-6 col-12">
+
+                        <div class="single-product">
+
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                            <!-- Product image-->
+                            <a asp-controller="product" asp-action="details" asp-route-id="@product.Id">
+                                <img class="card-img-top" src="~/product/@photoName" alt="..." />
+                            </a>
+
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">@productInfo.Name</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <!-- Product price-->
+                                    Rp. @string.Format("{0:##,#}", @productInfo.Price)
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" asp-controller="cart" asp-action="buy" asp-route-id="@product.Id">Add to cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pagination">
+                            @Html.PagedListPager((IPagedList)ViewBag.Products, page => Url.Action("category", "product", new { page = page, id = ViewBag.Category.Id }))
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

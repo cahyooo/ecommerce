@@ -59,9 +59,17 @@ namespace umkm_webapp.Areas.Admin.Controllers
         [Route("delete/{id}")]
         public IActionResult Delete(int id)
         {
-            var category = db.Categories.Find(id);
-            db.Categories.Remove(category);
-            db.SaveChanges();
+            try
+            {
+                var category = db.Categories.Find(id);
+                db.Categories.Remove(category);
+                db.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                TempData["error"] = e.Message;
+            }
+            
             return RedirectToAction("Index", "category", new { area = "admin" });
         }
 

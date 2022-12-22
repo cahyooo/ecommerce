@@ -1,0 +1,32 @@
+﻿
+
+@*<div class="mt-5">
+    <h1>Sign In</h1>
+    <p class="mb-4 mt-3">Teruslah Berkarya Hingga Hinaan dan Cacian Berubah Menjadi Pukulan.</p>
+    @if (ViewBag.error != null)
+    {
+        <div class=" callout callout-danger">
+            <h4>Iam a Danger</h4>
+            <p> @ViewBag.error </p>
+        </div>
+    }
+</div>*@
+
+
+
+<form asp-controller="login" asp-action="process" method="post" class="user">
+    <div class="form-group">
+        <input required="required" type="text" class="form-control form-control-user"
+               id="exampleInputEmail" aria-describedby="emailHelp"
+               placeholder="Enter Username..." name="username">
+    </div>
+    <div class="form-group">
+        <input required="required" type="password" class="form-control form-control-user"
+               id="exampleInputPassword" placeholder="Password" name="password">
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-user btn-block" style="padding-left: 2.5rem; padding-right: 2.5rem;" asp-controller="Customer" asp-action="Login">
+        Login
+    </button>
+
+</form>
